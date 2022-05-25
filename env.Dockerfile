@@ -10,7 +10,7 @@ RUN /opt/conda/bin/conda install jupyter jupyter_server>=1.11.0 -y
 
 RUN /opt/conda/bin/pip install opencv-python gdown \
   && /opt/conda/bin/pip install sentencepiece h5py wandb tqdm pandas matplotlib pyyaml sacrebleu wget \
-  && /opt/conda/bin/pip install transformers[sentencepiece] \
+  && /opt/conda/bin/pip install transformers \
   && /opt/conda/bin/pip install ftfy timm more-itertools \
   && /opt/conda/bin/pip install torchvision 
 
